@@ -1,33 +1,19 @@
 <div class="slider-principal-80">
     <div id="slider-imagens-80" class="owl-carousel">
-        <div style="background-image: url(img/raiz.jpg);"> 
-            <div class="slider-texto-80 ">
-                <div class="slogam-principal-80">Pensou em saúde para sua empresa, <br>
-                Pensou ICOM SEGUROS
-                </div>
-                
-            </div>
-        
-        </div>
-        <div style="background-image: url(img/odonto-fundo.jpg);">
-            <div class="slider-texto-80">
-                <div class="slogam-principal-80">Plano odontologico<br> e com a icom seguros</div>
-                
-            </div>
 
-        </div>
-        <div style="background-image: url(img/pet-fundo.jpg);">
-            <div class="slider-texto-80">
-                <div class="slogam-principal-80">Proteja quem vc ama</div>
-                
-            </div>
-        </div>
+    <div class="item">
+            <!--<div style="background-image: url(img/coracao.jpg);" class=""></div>-->
+            <div style="background-image: url(img/coracaoW.jpg);" class="d-none d-md-block"></div>
+            <div style="background-image: url(img/coracaoM.jpg);" class="d-md-none"></div>
     </div>
 
 
+    </div>
+
 </div>
 <section class="section-cotar">
-<div class="text-center cotar font-weight-bold">Cote agora seu seguro</div>
+<div class="text-center cotar font-weight-bold">Veja as vantagens</div>
+<!--
 <form class="form-inline justify-content-center cotacao"
 action="http://13.82.100.46/icomcotacao/save-email">
 <div class="row row-cotacao">
@@ -56,6 +42,18 @@ S7.33,22.41,12.7,22.41L12.7,22.41z" />
 </div>
 
 </form>
-<div class="cotar2"></div>
+-->
+<div class="separador"></div>
 </section>
+<div class="owl-carousel owl-theme">
+    <div class="item"><img src="img/coracao.jpg" alt=""></div>
+    <div class="item"><img src="img/coracao.jpg" alt=""></div>
+    <div class="item"><img src="img/coracao.jpg" alt=""></div>
+    <div class="item"><img src="img/coracao.jpg" alt=""></div>
+    <div class="item"><img src="img/coracao.jpg" alt=""></div>
+    <div class="item"><img src="img/coracao.jpg" alt=""></div>
+    <div class="item"><img src="img/coracao.jpg" alt=""></div>
+    <div class="item"><img src="img/coracao.jpg" alt=""></div>
+    <div class="item"><img src="img/coracao.jpg" alt=""></div>
+</div>
 

@@ -1,13 +1,13 @@
 
    <section>
-    <div class="container mt-5">
+    <div class="container">
             <div class="row ">
                 <div class="col-lg-4 col-sm-6 mt-3">
                     <div class=" text-center  holver-sombra">
                         <div class="px-3 py-3">
                                 
                                 
-                            <?xml version="1.0" encoding="iso-8859-1"?>
+                           
                             <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                             <svg version="1.1"  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; height: 100px;"  xml:space="preserve">
@@ -103,15 +103,15 @@
                         </div>
                         <div class="px-4 pb-5">
                                     <h5 class="font-weight-bold">Redução de Custo</h5>
-                                    <p class="text-muted">O Principal foco da ICO<span class="laranja-m">M</span> Seguros é reduzir o custo que a empresa tem com plano de saúde
-                                        empresarial.</p>
+                                    <p class="text-muted">Nosso principal foco é a <b>redução do custo</b> para que sua empresa tenha o melhor plano de saúde por um preço acessível.</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-4 col-sm-6 mt-3">
-                        <div class=" text-center  holver-sombra">
-                            <div class="px-3 py-1">
-                                    <?xml version="1.0" encoding="iso-8859-1"?>
+                        <div class=" text-center  holver-sombra"  data-toggle="modal" data-target="#modalExemplo">
+                            <div class="px-3 py-1 pt-4">
+                                    
                                     <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512.002 512.002" style="enable-background:new 0 0 512.002 512.002; height:100px; width:120px;" xml:space="preserve" width="512" height="512">
                                     <g>
@@ -153,11 +153,11 @@
                                     </svg>
                                     
                             </div>
-                            <div class="px-4 pb-5">
-                                        <h5 class="font-weight-bold">Excelência em pós venda</h5>
-                                        <p class="text-muted"> Buscamos sempre estreitar nosso relacionamento com nosso cliente para que ele saiba que
+                            <div class="px-4 pb-5 pt-2">
+                                        <h5 class="font-weight-bold">Excelência em Pós Venda</h5>
+                                        <p class="text-muted"> Buscamos sempre estreitar nossos laços com nossos clientes para que ele saiba que
                                                 poderá sempre
-                                                contar com a ICO<span class="laranja-m">M</span>.</p>
+                                                contar com a <b>ICO<span class="laranja-m">M</span></b>.</p>
                             </div>
                         </div>
                     </div>
@@ -166,7 +166,7 @@
                 <div class="col-lg-4  col-sm-12 mt-3">
                         <div class=" text-center  holver-sombra">
                                 <div class="px-3 py-3">
-                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                       
                                         <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                              viewBox="0 0 511.998 511.998" style="enable-background:new 0 0 511.998 511.998; height: 100px; " xml:space="preserve">
@@ -280,15 +280,36 @@
         
                                 </div>
                                 <div class="px-4 pb-5">
-                                            <h5 class="font-weight-bold">Desconto ICOM</h5>
-                                            <p class="text-muted">A ICO<span class="laranja-m">M</span> também oferece um desconto exclusivo na contratação de planos para PME.</p>
+                                            <h5 class="font-weight-bold">Desconto ICO<span class="laranja-m">M</span></h5>
+                                            <p class="text-muted">Oferecemos também um desconto exclusivo na contratação de planos para <b>PME</b>.</p>
                                 </div>
                             </div>
                 </div>
             </div>
         </div>
     </div>
-        
-</section>
 
     
+</section>
+<section class="section-cotar">
+<div class="text-center cotar font-weight-bold">Conheça outros produtos</div>
+<div class="separador mb-3"></div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo"  >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Exelencia no pos vendas e:</h5>
+
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate eveniet odio magnam, impedit pariatur labore minus enim qui perferendis, aut animi eum ipsum. Molestiae distinctio harum velit quaerat nisi.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

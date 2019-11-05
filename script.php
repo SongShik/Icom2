@@ -8,7 +8,6 @@
   <link rel="icon" type="image/x-icon" href="img/ICOM LOGO.png">
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
-  <link href="https://fonts.googleapis.com/css?family=Nunito|Maiden+Orange" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
   <script src='js/jquery-3.4.1.min.js'></script>
@@ -16,47 +15,57 @@
 </head>
 
 <body>
-    <?php
-    $assunto = $_POST['assunto'];
-    $email = $_POST['email'];
-    $corpo = "
-        nome:"          .$_POST['nome']."
-        assunto:"       .$_POST['assunto']."
-        email:"         .$_POST['email']."
-        mensagem:"      .$_POST['mensagem']."
-     ";
-    
-    mail('marketing@icomseguros.com.br',$assunto,$corpo,$email);
-    
+ <?php
+
+    //recaptcha
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL , "https://www.google.com/recaptcha/api/siteverify");
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array(
+      "secret"=> "6LfaLL4UAAAAAARlpIsOS6wQcutxJhnR33eYi73r",
+      "response"=>$_POST["g-recaptcha-response"],
+      "remoteip"=>$_SERVER["REMOTE_ADDR"]
+    )));
+
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    $recaptcha = json_decode(curl_exec($ch), true);
+    curl_close($ch);
+
+    if($recaptcha["success"] === true){
+        // verifica se os campos estao vazios caso estejam e redirecionado para a pagina inicial
+        if ($_POST['nome']    == null and
+            $_POST['assunto'] == null and
+            $_POST['email']   == null and
+            $_POST['mensagem']== null
+        ){
+          header('Location: index.php');
+        }else{ 
+        $assunto = $_POST['assunto'];
+        $email = $_POST['email'];
+        $corpo = "
+            nome:"          .$_POST['nome']."
+            assunto:"       .$_POST['assunto']."
+            email:"         .$_POST['email']."
+            mensagem:"      .$_POST['mensagem']."
+        ";
+        mail('marketing1@icomseguros.com.br',$assunto,$corpo,$email);
+        }
+   }else{
+    header('Location: index.php');
+   }
+
+
     ?>
-  <!-- menu -->
-  <section>
-    <nav class="navbar navbar-expand-lg menu ">
-      <a class="navbar-brand" href="#">
-        <img src="img/icone.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="img/menu-icone.png" alt="">
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item"> <a class="nav-link" href="#"> Área do Cliente </a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#quemsomos"> Quem Somos </a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#"> Acesso Adminstrativo </a> </li>
-        </ul>
-      </div>
-    </nav>
-
-  </section>
+   <!-- menu -->
+   <? //php include 'views/topo.php'; ?>
 
 
   <!-- imagem principal -->
   <section>
-
-      <div class="agradecimento "> 
+      <div class="agradecimento text-center"> 
         <div class="container pt-3 ">
           <div class="row">
             <div class="col">
@@ -66,24 +75,20 @@
               </div>
           </div>
           <div class="row" >
-            <div class="col tamanho wow bounceInUp" data-wow-delay="1s">
+            <div class="col text-white wow bounceInUp" data-wow-delay="1s">
             <h4><span class="email-obrigado " >Obrigado</span>
                     <br>Agradecemos o envio do seu E-mail,<br> sua opinião ou sua duvida sempre faz<br> diferença, em breve retornaremos seu email
                     <br>
-                    <a href="index.php" class="btn btn-lg btn-outline-primary mt-3   ">Voltar para o inicio</a>
+                    <a href="index.php" class="btn btn-lg btn-outline-primary mt-3">Voltar para o inicio</a>
                 </h4>
             </div>
-
-            
           </div>
         </div>
       </div>
       </section>
 
-  
 <!--footer-->
-<?php include 'footer.php'; ?>
-
+<?php include 'views/footer.php'; ?>
 
 </body>
 <!--jquery -->

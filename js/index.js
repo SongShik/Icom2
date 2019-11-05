@@ -17,28 +17,10 @@ $(window).scroll(function() {
   }
 });
 
-function menu() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
 
-var linkClicked = document.getElementsByClassName('nav-link');
-var numClass = linkClicked.length;
-
-for (var i = 0; i < numClass; i++) {
-  linkClicked[i].addEventListener('click', function(){
-    var onTheMoment = document.getElementsByClassName('active');
-    onTheMoment[0].className = onTheMoment[0].className.replace(' active', '');
-    this.className += ' active';
-  }, false);
-}
 
 /* animação no scroll */
-$('nav a').click(function(e){
+$('#quemSomos').click(function(e){
  e.preventDefault();
 
  var id = $(this).attr('href'),
@@ -93,14 +75,13 @@ $(document).ready(function(){
       autoplayHoverPause:true,
       responsive:{
         0:{
-          autoWidth:true,
-          items:1,
+          items:2,
         },
         600:{
-            items:3,
+            items:4,
         },
         1000:{
-            items:6,
+            items:7,
         }
     }     
   });
@@ -145,17 +126,31 @@ $('#slider-imagens-80').owlCarousel({
   }
 });
 
+$('#testimonial-slider').owlCarousel({
+  loop:true,
+  autoplay:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
 });
 
 
 
-/* parallax  imagem principal*/
-$('.parallax-window').parallax({imageSrc: 'img/raiz2.png'});
+});
 
-/* wow animated.css */ 
+
+/* wow animated.css 
 new WOW().init();
-
-/* voltar ao topo */
+ */
+/* voltar ao topo 
 $(function(){
   $(document).on( 'scroll', function(){
       if ($(window).scrollTop() > 100) {
@@ -175,66 +170,4 @@ function scrollToTop() {
   $('html, body').animate({scrollTop: offsetTop}, 600, 'linear');
 }
 
-
-
-
-function abrirSeguro(evt, seguro) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  
-  for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-     
-
-  if (seguro == "odonto"){
-    $('#tipos-seguros-fundo').removeClass('tipos-seguros-fundo3');
-    $('#tipos-seguros-fundo').addClass('tipos-seguros-fundo2');
-  }else{
-    $('#tipos-seguros-fundo').removeClass('tipos-seguros-fundo2');
-    $('#tipos-seguros-fundo').addClass('tipos-seguros-fundo3');
-  }
-
-  }
-  
-  document.getElementById(seguro).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// formulario
-document.getElementById("defaultOpen").click();
-$('#tipos-seguros-fundo').addClass('tipos-seguros-fundo2');
-
-$("#formulario-email").validate({
-  rules : {
-        nome:{
-               required:true,
-               minlength:3,
-               
-        },
-        email:{
-               required:true,
-               
-        },
-
-        mensagem:{
-               required:true
-        },                              
-  },
-  messages:{
-        nome:{
-               required:"Por favor, informe seu nome",
-               minlength:"O nome deve ter pelo menos 3 caracteres"
-        },
-        email:{
-               required:"É necessário informar um email"
-        },
-        mensagem:{
-               required:"A mensagem não pode ficar em branco"
-        }     
-  }
-}); 
+*/
