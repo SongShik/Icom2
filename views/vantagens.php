@@ -109,7 +109,7 @@
                 </div>
                 
                 <div class="col-lg-4 col-sm-6 mt-3">
-                        <div class=" text-center  holver-sombra"  data-toggle="modal" data-target="#modalExemplo">
+                        <div class=" text-center  holver-sombra" >
                             <div class="px-3 py-1 pt-4">
                                     
                                     <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -296,20 +296,3 @@
 <div class="separador mb-3"></div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="modalExemplo"  >
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Exelencia no pos vendas e:</h5>
-
-      </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cupiditate eveniet odio magnam, impedit pariatur labore minus enim qui perferendis, aut animi eum ipsum. Molestiae distinctio harum velit quaerat nisi.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
