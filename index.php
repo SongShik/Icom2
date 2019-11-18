@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no ">
     <title>ICOM seguros</title>
     <link rel="icon" type="image/x-icon" href="img/ICOM LOGO.png">
     <!-- fonte do google-->
@@ -17,31 +17,20 @@
 
     <!--recaptcha-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56447495-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-807609213');
-      gtag('config', 'UA-56447495-1');
-    </script>
-
-<script>
-    window.pipedriveLeadboosterConfig = 
-    {base: 'leadbooster-chat.pipedrive.com',
-    companyId: 581936,playbookUuid: '249fd59d-d4e3-4482-adcb-9de64515e259',
-    version: 2};
+  <script>
+   function initFreshChat() {
+    window.fcWidget.init({
+      token: "74b2f831-806b-429c-8c27-dbe2819545b0",
+      host: "https://wchat.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 </script>
-<script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
-                                
+
                                 
 </head>
 
-
-
 <body>
-  
 <!-- topo fixo-->
 <?php include "views/topo.php" ?>
 
@@ -55,42 +44,33 @@
 <?php include "views/pet-odonto.php"?>
 
 <!--  depoimentos-->
-<? //php include "views/depoimento.php"?>
+<?php include "views/depoimento.php"?>
 
 <!--quem somos -->
 <?php include "views/quem-somos.php"?>
 
+<!--contato -->
+<?php include "views/contato.php"?>
 
-
+<!-- seguradoras -->
+<div class="separador"></div>
+<h3 class="font-weight-bold mt-3 text-center">As melhores seguradoras a sua disposição </h3>
+    <div class="owl-carousel mt-3 "  id="seguradoras-slider" >
+        <img class="item" src="img/seguradoras/amil.png" alt="image"/>
+        <img class="item" src="img/seguradoras/sulamerica.png" alt="image" />
+        <img class="item" src="img/seguradoras/porto-seguro.png" alt="image"> 
+        <img class="item" src="img/seguradoras/gndi.png" alt="image" />
+        <img class="item" src="img/seguradoras/unimed.png" alt="image" />
+        <img class="item" src="img/seguradoras/bradesco.png" alt="image" />
+        <img class="item" src="img/seguradoras/allianz.png" alt="image" />
+        <img class="item" src="img/seguradoras/care-plus.png" alt="image" />
+        <img class="item" src="img/seguradoras/omint.png" alt="image" />
+        <img class="item" src="img/seguradoras/sompo.png" alt="image" />
+    </div>
 
 
 <!--footer-->
 <?php include 'views/footer.php' ?>
-
-<!-- voltar ao topo 
-<section>
-    <div class="voltar-topo">Faça sua <br>cotação agora mesmo</div>
-    <div class="smoothscroll-top">
-        
-            
-           
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 476.737 476.737" style="enable-background:new 0 0 476.737 476.737;" xml:space="preserve" class="svg-voltar-ao-topo">
-            <g>
-                <g>
-                    <g>
-                        <path  d="M238.369,0C106.726,0,0,106.726,0,238.369c0,131.675,106.726,238.369,238.369,238.369
-                            c131.675,0,238.369-106.694,238.369-238.369C476.737,106.726,370.043,0,238.369,0z M352.722,289.221
-                            c-6.198,6.198-16.273,6.198-22.47,0l-91.883-91.883l-91.883,91.883c-6.198,6.198-16.273,6.198-22.47,0
-                            c-6.198-6.166-6.198-16.273,0-22.47L227.086,163.68c3.115-3.115,7.183-4.64,11.283-4.64s8.168,1.526,11.283,4.64L352.722,266.75
-                            C358.92,272.948,358.92,282.991,352.722,289.221z"/>
-                    </g>
-                </g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    <g>    </g>    </svg>
-            
-
-        
-            </div>
-</section>-->
 
 </body>
 
@@ -104,7 +84,8 @@
 <!--animate wow-->
 <link rel="stylesheet" href="css/animate.css">
 <script src="js/wow.min.js"></script>
-
+<!--validação jquey-->
+<script src="js/jquery.validate.min.js"></script>
 
 <script src="js/index.js"></script>
 
