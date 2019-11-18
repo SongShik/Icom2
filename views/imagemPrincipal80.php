@@ -1,42 +1,13 @@
 <div class="slider-principal-80">
     <div id="slider-imagens-80" class="owl-carousel">
-        
-        <div style="background-image: url(img/raiz.jpg);"> 
-            <div class="slider-texto-80 ">
-                <div class="slogam-principal-80">Pensou em saúde para sua empresa, <br>
-                Pensou ICO<span class="laranja-m">M</span> SEGUROS
-                </div>
-            </div>
-        </div>
-<!--     
-   <div style="background-image: url(img/odonto-fundo.jpg);">
-            <div class="slider-texto-80">
-                <div class="slogam-principal-80">Plano odontológico<br> é com a ICO<span class="laranja-m">M</span> Seguros</div>
-            </div>
-        </div>
-        <div style="background-image: url(img/pet-fundo.jpg);">
-            <div class="slider-texto-80">
-                <div class="slogam-principal-80">Proteja quem você ama</div>
-            </div>
-        </div>
-        <div style="background-image: url(img/arrumado.jpg);">
-            <div class="slider-texto-80">
-                <div class="slogam-principal-80">Não importa sua profissão, a<br>ICO<span class="laranja-m">M</span> Seguros socorre você</div>
-            </div>
-        </div>
-        
-        <div style="background-image: url(img/coracao.jpg);">
-            <div class="slider-texto-80">
-                <div class="slogam-principal-80">A ICO<span class="laranja-m">M</span> te ajuda a <br>encontrar o melhor plano de saúde</div>
-            </div>
-        </div>
-       
-        <div style="background-image: url(img/fofo.jpg);">
-            <div class="slider-texto-80">
-                <div class="slogam-principal-80">Descubra o plano ideal para sua <br>empresa aqui na  ICO<span class="laranja-m">M</span> Seguros</div>
-            </div>
-        </div>
--->
+
+    <div class="item">
+            <!--<div style="background-image: url(img/coracao.jpg);" class=""></div>-->
+            <div style="background-image: url(img/coracaoW.jpg);" class="d-none d-md-block"></div>
+            <div style="background-image: url(img/coracaoM.jpg);" class="d-md-none"></div>
+    </div>
+
+
     </div>
 
 </div>
@@ -71,7 +42,8 @@ S7.33,22.41,12.7,22.41L12.7,22.41z" />
 </div>
 
 </form>
-
-<div class="separador"></div>-->
+-->
+<div class="separador"></div>
 </section>
+
 

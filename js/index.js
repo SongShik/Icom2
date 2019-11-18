@@ -17,28 +17,10 @@ $(window).scroll(function() {
   }
 });
 
-function menu() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
 
-var linkClicked = document.getElementsByClassName('nav-link');
-var numClass = linkClicked.length;
-
-for (var i = 0; i < numClass; i++) {
-  linkClicked[i].addEventListener('click', function(){
-    var onTheMoment = document.getElementsByClassName('active');
-    onTheMoment[0].className = onTheMoment[0].className.replace(' active', '');
-    this.className += ' active';
-  }, false);
-}
 
 /* animação no scroll */
-$('nav a').click(function(e){
+$('#quemSomos').click(function(e){
  e.preventDefault();
 
  var id = $(this).attr('href'),
@@ -165,10 +147,10 @@ $('#testimonial-slider').owlCarousel({
 });
 
 
-/* wow animated.css */ 
+/* wow animated.css 
 new WOW().init();
-
-/* voltar ao topo */
+ */
+/* voltar ao topo 
 $(function(){
   $(document).on( 'scroll', function(){
       if ($(window).scrollTop() > 100) {
@@ -188,37 +170,4 @@ function scrollToTop() {
   $('html, body').animate({scrollTop: offsetTop}, 600, 'linear');
 }
 
-
-// formulario
-document.getElementById("defaultOpen").click();
-$('#tipos-seguros-fundo').addClass('tipos-seguros-fundo2');
-
-$("#formulario-email").validate({
-  rules : {
-        nome:{
-               required:true,
-               minlength:3,
-               
-        },
-        email:{
-               required:true,
-               
-        },
-
-        mensagem:{
-               required:true
-        },                              
-  },
-  messages:{
-        nome:{
-               required:"Por favor, informe seu nome",
-               minlength:"O nome deve ter pelo menos 3 caracteres"
-        },
-        email:{
-               required:"É necessário informar um email"
-        },
-        mensagem:{
-               required:"A mensagem não pode ficar em branco"
-        }     
-  }
-}); 
+*/
