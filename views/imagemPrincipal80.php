@@ -12,7 +12,7 @@
 
 </div>
 <section class="section-cotar">
-<div class="text-center cotar font-weight-bold">Cote Agora</div>
+<div class="text-center cotar font-weight-bold">Faça sua cotação</div>
 
 <form class="form-inline justify-content-center cotacao"
 action="http://13.82.100.46/icomcotacao/save-email">
