@@ -12,8 +12,8 @@
 
 </div>
 <section class="section-cotar">
-<div class="text-center cotar font-weight-bold">Veja as vantagens</div>
-<!--
+<div class="text-center cotar font-weight-bold">Cote Agora</div>
+
 <form class="form-inline justify-content-center cotacao"
 action="http://13.82.100.46/icomcotacao/save-email">
 <div class="row row-cotacao">
@@ -42,7 +42,7 @@ S7.33,22.41,12.7,22.41L12.7,22.41z" />
 </div>
 
 </form>
--->
+
 <div class="separador"></div>
 </section>
 
