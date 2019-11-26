@@ -111,8 +111,10 @@ $(document).ready(function(){
 
 
 $('#slider-imagens-80').owlCarousel({
+  /*
   loop:true,
   autoplay:true,
+  */
   responsive:{
       0:{
           items:1
